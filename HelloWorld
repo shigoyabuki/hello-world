@@ -1,5 +1,11 @@
+import java.util.Scanner;
 public class HelloWorld {
+private String name;
   public static void main(String[] args) {
-      System.out.println("Hello World I am Nguyen, Vo Anh Nguyen!");
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter your name: ");
+      name = input.nextLine();
+      System.out.print("Hello World I am ");
+      System.out.println(name);
   }
 }
